@@ -5,16 +5,22 @@ using UnityEngine.InputSystem;
 [RequireComponent (typeof(CharacterController))] // will add the dependencey to the object
 public class PlayerController : MonoBehaviour
 {
+    // test for git
     [Header("Movement")]
     [Tooltip("Set Speed of player movement")]
     public float moveSpeed = 5f;
     public float jumpHeight = 1.5f;
     public float gravity = -9.8f;
+    public float rotaionSmoothTime = 0.1f;
 
-    [Header("Grounf Check")]
+    [Header("Ground Check")]
     public Transform groundCheck;
     public float groundDistance;
     public LayerMask groundMask;
+
+    [Header("Refrences")]
+    public Transform cameraTransform;
+
 
     // private
 
@@ -25,11 +31,18 @@ public class PlayerController : MonoBehaviour
     bool _isJumping;
     float _jumpCoolDown = 0f;
     bool _jumpPressed;
+    float _rotationVelocity;
+
 
 
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
+        // auto find camera transform if not assigned
+        if(cameraTransform == null && Camera.main != null)
+        {
+            cameraTransform = Camera.main.transform;
+        }
     }
 
     // inputs via messageing
@@ -60,8 +73,16 @@ public class PlayerController : MonoBehaviour
 
         float speed = moveSpeed;
 
-        Vector3 moveDir = new Vector3 (_moveInput.x, 0f , _moveInput.y);    
+        // camera related directions
+        float targetAngle = Mathf.Atan2(_moveInput.x,_moveInput.y) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
 
+        //smooth rotaion tward move direction
+        float smoothAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _rotationVelocity, rotaionSmoothTime);
+
+        transform.rotation = Quaternion.Euler(0f, smoothAngle, 0f);
+
+        //Vector3 moveDir = new Vector3 (_moveInput.x, 0f , _moveInput.y);    
+        Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
         _characterController.Move(moveDir.normalized * speed * Time.deltaTime);
     }
 
@@ -93,10 +114,10 @@ public class PlayerController : MonoBehaviour
         handleJump();
         ApplyGravity();
         handleGroundCheck();
-        //if (_isGrounded )
-        //{
-        //    Debug.Log("on ground");
-        //}
+        if (_isGrounded)
+        {
+            Debug.Log("on ground");
+        }
         Debug.Log(_velocity.y);
     }
 
