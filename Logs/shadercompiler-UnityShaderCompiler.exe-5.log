@@ -48,3 +48,4 @@ Cmd: compileSnippet
   error: 1 plat 4 at C:/Users/danie/Documents/GitHub/Unity2ClassProject/Library/PackageCache/com.unity.render-pipelines.core@2e28fe32b230/Editor/Lighting/ProbeVolume/VoxelizeScene.hlsl(352): use of potentially uninitialized variable (rayOrigin) use of potentially uninitialized variable (rayDir)
  ok=1 outsize=13962
 
+Cmd: shutdown
