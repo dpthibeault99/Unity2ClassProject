@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,11 @@ public class GameManager : MonoBehaviour
     [Header("PickUps")]
     public int totalPickUps = 5;
     public int collectedPickUps = 0;
+
+    [Header("UI Elements")]
+    public TMP_Text itemDisplay;
+    public GameObject winPanel;
+
 
     bool _gameOver = false;
 
@@ -26,18 +32,42 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        if(itemDisplay != null)
+        {
+            UpdateUI();
+        }
+        if(winPanel != null) winPanel.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("pick ups" + collectedPickUps);
     }
 
     public void onPickUpCollected()
     {
-        if(_gameOver) return;
         collectedPickUps++;
+        if (_gameOver) return;
     }
+
+     void UpdateUI()
+    {
+        if (itemDisplay != null) itemDisplay.text = $"Items {collectedPickUps} / {totalPickUps}";
+
+    }
+
+    public void OnGoalReached()
+    { 
+
+        if (_gameOver) return;
+        _gameOver = true;
+
+        if (winPanel != null)
+        {
+            winPanel.SetActive(true);
+            winPanel.GetComponentInChildren<TMP_Text>().text = $"All {collectedPickUps} items collected!";
+        }
+    }
+
 }
