@@ -8,14 +8,15 @@ public class PlayerInterator : MonoBehaviour
 
     public void OnInteract(InputValue value)
     {
+        Debug.Log("interact");
         if(value.isPressed)
         {
             Ray ray = new Ray(transform.position + playerInteractHeight, transform.forward);
 
-            //if(Physics)
-            //{
-
-            //}
+            if(Physics.Raycast(ray, out RaycastHit hit,interactDistance,interatctMask))
+            {
+                Debug.Log("interacted with " + hit.collider.name);
+            }
         }
     }
     private void OnDrawGizmos()
