@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("Refrences")]
     public Transform cameraTransform;
+    public Animator animator;
+    public float inputMagnitute;
 
 
     // private
@@ -122,6 +124,7 @@ public class PlayerController : MonoBehaviour
         handleJump();
         ApplyGravity();
         handleGroundCheck();
+        UpdatAnimation();
         //if (_isGrounded)
         //{
         //    Debug.Log("on ground");
@@ -136,6 +139,11 @@ public class PlayerController : MonoBehaviour
     {
         _velocity.y += gravity * Time.deltaTime;
         _characterController.Move(new Vector3(0, _velocity.y, 0) * Time.deltaTime);
+    }
+
+    void UpdatAnimation()
+    {
+        animator.SetFloat("speed",inputMagnitute);
     }
 
     void handleJump()
