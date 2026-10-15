@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     [Tooltip("Set Speed of player movement")]
     public float moveSpeed = 5f;
+    public float sprintSpeed = 10f;
     public float jumpHeight = 1.5f;
     public float gravity = -9.8f;
     public float rotaionSmoothTime = 0.1f;
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("Refrences")]
     public Transform cameraTransform;
+    public Animator animator;
+    public float inputMagnitute;
 
 
     // private
@@ -32,6 +35,7 @@ public class PlayerController : MonoBehaviour
     bool _isJumping;
     float _jumpCoolDown = 0f;
     bool _jumpPressed;
+    bool _sprintHeld;
     float _rotationVelocity;
 
 
@@ -72,7 +76,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        float speed = moveSpeed;
+        float speed = _sprintHeld? sprintSpeed : moveSpeed;
 
         // camera related directions
         float targetAngle = Mathf.Atan2(_moveInput.x,_moveInput.y) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
@@ -87,6 +91,11 @@ public class PlayerController : MonoBehaviour
         _characterController.Move(moveDir.normalized * speed * Time.deltaTime);
     }
 
+    public void OnSprint(InputValue value)
+    {
+        // what is this weird thing with bools???
+        _sprintHeld = !_sprintHeld;
+    }
     void handleGroundCheck()
     {
         if (_jumpCoolDown > 0f)
@@ -115,11 +124,12 @@ public class PlayerController : MonoBehaviour
         handleJump();
         ApplyGravity();
         handleGroundCheck();
-        if (_isGrounded)
-        {
-            Debug.Log("on ground");
-        }
-        Debug.Log(_velocity.y);
+        UpdatAnimation();
+        //if (_isGrounded)
+        //{
+        //    Debug.Log("on ground");
+        //}
+        //Debug.Log(_velocity.y);
     }
 
     /// <summary>
@@ -129,6 +139,11 @@ public class PlayerController : MonoBehaviour
     {
         _velocity.y += gravity * Time.deltaTime;
         _characterController.Move(new Vector3(0, _velocity.y, 0) * Time.deltaTime);
+    }
+
+    void UpdatAnimation()
+    {
+        animator.SetFloat("speed",inputMagnitute);
     }
 
     void handleJump()
