@@ -1,38 +1,49 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/respin/6000.4.12f1-6df48370b9ce' branch; Version is '6000.4.12f1 (3ca267ce8005) revision 3973735'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) Enterprise' Language: 'en' Physical Memory: 32688 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-danie" at "2026-10-21T15:26:53.5111534Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 32212 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-008028536" at "2026-10-15T16:51:12.6265139Z"
 Process architecture: x64
-Date: 2026-10-15T16:51:12Z
+Date: 2026-10-21T15:26:53Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 67436, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              f8c404794db84132a8c3864b4fa87472
+  Correlation Id:          298ac82b36289db68fef58489dcb1941
+  External correlation Id: 7920626081342806347
+  Machine Id:              eEWrpC/9x6xzx4JhK/azTG+GY20=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-danie" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-danie-notifications" at "2026-10-21T15:26:53.5365954Z"
+[Licensing::Module] Licensing Background thread has ended after 0.03s
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity 6000.4.12f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\6000.4.12f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/008028536/OneDrive - New England Institute of Technology/Desktop/myprojects/Unity2ClassProject
+C:/Users/danie/Documents/GitHub/Unity2ClassProject
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-56422
+52043
 -licensingIpc
-LicenseClient-008028536
+LicenseClient-danie
 -force-d3d12
 -job-worker-count
-3
+7
 -background-job-worker-count
 8
 -gc-helper-count
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Users/008028536/OneDrive - New England Institute of Technology/Desktop/myprojects/Unity2ClassProject
-C:/Users/008028536/OneDrive - New England Institute of Technology/Desktop/myprojects/Unity2ClassProject
+Successfully changed project path to: C:/Users/danie/Documents/GitHub/Unity2ClassProject
+C:/Users/danie/Documents/GitHub/Unity2ClassProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
@@ -68,17 +79,13 @@ C:/Users/008028536/OneDrive - New England Institute of Technology/Desktop/myproj
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [25572]  Target information:
+Player connection [84440]  Target information:
 
-Player connection [25572]  * "[IP] 10.72.45.243 [Port] 0 [Flags] 2 [Guid] 2508986011 [EditorId] 2508986011 [Version] 1048832 [Id] WindowsEditor(7,N203A6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [84440]  * "[IP] 10.91.6.101 [Port] 0 [Flags] 2 [Guid] 3603324456 [EditorId] 3603324456 [Version] 1048832 [Id] WindowsEditor(7,ThunderBolt3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [25572]  * "[IP] 192.168.159.1 [Port] 0 [Flags] 2 [Guid] 2508986011 [EditorId] 2508986011 [Version] 1048832 [Id] WindowsEditor(7,N203A6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [25572]  * "[IP] 192.168.139.1 [Port] 0 [Flags] 2 [Guid] 2508986011 [EditorId] 2508986011 [Version] 1048832 [Id] WindowsEditor(7,N203A6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [25572] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [25572] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 3
+Player connection [84440] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [84440] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -89,77 +96,30 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 19.79 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.32 ms, found 4 plugins.
 Initialize engine version: 6000.4.12f1 (3ca267ce8005)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity 6000.4.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/008028536/OneDrive - New England Institute of Technology/Desktop/myprojects/Unity2ClassProject/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/danie/Documents/GitHub/Unity2ClassProject/Assets
 Forcing GfxDevice: Direct3D 12
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 d3d12: failed to query info queue interface (0x80004002).
 Direct3D:
-    Version:         Direct3D 12 [level 12.1]
-    Renderer:        NVIDIA Quadro M4000 (ID=0x13f1)
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 5060 Laptop GPU (ID=0x2d19)
     Vendor:          NVIDIA
-    VRAM:            8132 MB
-    App VRAM Budget: 7364 MB
-    Driver:          32.0.15.7652
+    VRAM:            7951 MB
+    App VRAM Budget: 7183 MB
+    Driver:          32.0.16.1060
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity 6000.4.12f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity 6000.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity 6000.4.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity 6000.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-008028536"
-[Licensing::IpcConnector] LicenseClient-008028536 channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-008028536-6000.4.12" at "2026-10-15T16:51:18.1744703Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 27624, path: "C:/Program Files/Unity 6000.4.12f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
-[Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              b4d60766d8774d5f9c2866eb77940da3
-  Correlation Id:          ad2262b375f5e816d352b8c4e72ba51c
-  External correlation Id: 2857231260869367897
-  Machine Id:              TSp5E81PAylAhDuzM34LgOdOjpw=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-008028536-6000.4.12" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-008028536-6000.4.12-notifications" at "2026-10-15T16:51:18.2018983Z"
-[Licensing::Module] Licensing Background thread has ended after 5.58s
-[Licensing::Module] Licensing is initialized (took 2.62s).
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-QCFS-ZCJ9-HB68-2BD8-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 2475990342676-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-Register platform support module: C:/Program Files/Unity 6000.4.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-QCFS-ZCJ9-HB68-2BD8-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 2475990342676-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-Register platform support module: C:/Program Files/Unity 6000.4.12f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 2.645646 seconds.
-[usbmuxd] Start listen thread
-[usbmuxd] Listen thread started
-Native extension for iOS target not found
-Native extension for Android target not found
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001361 seconds.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -167,23 +127,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.688 seconds
-Domain Reload Profiling: 4436ms
-	BeginReloadAssembly (443ms)
-	RebuildCommonClasses (125ms)
-	RebuildNativeTypeToScriptingClass (33ms)
-	initialDomainReloadingComplete (2801ms)
-	LoadAllAssembliesAndSetupDomain (345ms)
-		LoadAssemblies (428ms)
-		AnalyzeDomain (330ms)
-			TypeCache.Refresh (329ms)
-				TypeCache.ScanAssembly (308ms)
-	FinalizeReload (688ms)
+- Finished resetting the current domain, in  0.262 seconds
+Domain Reload Profiling: 581ms
+	BeginReloadAssembly (101ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (136ms)
+		LoadAssemblies (97ms)
+		AnalyzeDomain (129ms)
+			TypeCache.Refresh (128ms)
+				TypeCache.ScanAssembly (117ms)
+	FinalizeReload (263ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (106ms)
-			BeforeProcessingInitializeOnLoad (144ms)
-			ProcessInitializeOnLoadAttributes (176ms)
-			ProcessInitializeOnLoadMethodAttributes (138ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (73ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 ========================================================================
 Worker process is ready to serve import requests
@@ -193,12 +153,12 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
-  Id: F4-QCFS-ZCJ9-HB68-2BD8-XXXX
+  Id: F4-2RR8-Q2KF-KFP4-Z2B2-XXXX
   Product: Unity Personal
   Type: ULF
   Expiration: Unlimited
 [Licensing::Module] License group:
-  Id: 2475990342676-UnityPersXXXX
+  Id: 4737143-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
@@ -232,22 +192,9 @@ Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Un
 Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-DirectoryNotFoundException: Could not find a part of the path "C:\Users\008028536\OneDrive - New England Institute of Technology\Desktop\myprojects\Unity2ClassProject\Library\PackageCache\com.unity.collections@5b6ebd78ccc0\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll"
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <f713e1c3c5f545ce9b1df47230f4f853>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <f713e1c3c5f545ce9b1df47230f4f853>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
-  at Mono.Cecil.ModuleDefinition.GetFileStream (System.String fileName, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00006] in <4e339395f8074c75847e518298d9c5fd>:0 
-  at Mono.Cecil.ModuleDefinition.ReadModule (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00008] in <4e339395f8074c75847e518298d9c5fd>:0 
-  at Mono.Cecil.AssemblyDefinition.ReadAssembly (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00000] in <4e339395f8074c75847e518298d9c5fd>:0 
-  at UnityEditor.AssemblyValidation.LoadAssemblyDefinitions (System.String[] assemblyPaths, System.String[] searchPaths) [0x00043] in <b2eb3a993ec44b92abc19c05010e7fa0>:0 
-  at UnityEditor.AssemblyValidation.ValidateAssemblies (System.String[] assemblyPaths, System.Boolean enableLogging) [0x00006] in <b2eb3a993ec44b92abc19c05010e7fa0>:0 
-
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 7.11 ms, found 4 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -259,259 +206,44 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 5.57 ms, found 4 plugins.
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-Unity2ClassProject
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.464 seconds
-Domain Reload Profiling: 2978ms
-	BeginReloadAssembly (314ms)
-		DisableScriptedObjects (9ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (57ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (199ms)
-	LoadAllAssembliesAndSetupDomain (926ms)
-		LoadAssemblies (565ms)
-		AnalyzeDomain (538ms)
-			TypeCache.Refresh (328ms)
-				TypeCache.ScanAssembly (298ms)
-			BuildScriptInfoCaches (188ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (1464ms)
+- Finished resetting the current domain, in  0.576 seconds
+Domain Reload Profiling: 1230ms
+	BeginReloadAssembly (133ms)
+		DisableScriptedObjects (3ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (436ms)
+		LoadAssemblies (315ms)
+		AnalyzeDomain (193ms)
+			TypeCache.Refresh (133ms)
+				TypeCache.ScanAssembly (119ms)
+			BuildScriptInfoCaches (50ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (577ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			BeforeProcessingInitializeOnLoad (286ms)
-			ProcessInitializeOnLoadAttributes (537ms)
-			ProcessInitializeOnLoadMethodAttributes (169ms)
-			AfterProcessingInitializeOnLoad (16ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 5.69 ms, found 4 plugins.
+			BeforeProcessingInitializeOnLoad (98ms)
+			ProcessInitializeOnLoadAttributes (227ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
 Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7285 unused Assets / (5.7 MB). Loaded Objects now: 8124.
-Memory consumption went from 159.1 MB to 153.4 MB.
-Total: 19.776600 ms (FindLiveObjects: 1.145100 ms CreateObjectMapping: 2.667500 ms MarkObjects: 10.479600 ms  DeleteObjects: 5.480400 ms)
+Unloading 7286 unused Assets / (5.3 MB). Loaded Objects now: 8127.
+Memory consumption went from 167.9 MB to 162.6 MB.
+Total: 7.594100 ms (FindLiveObjects: 0.816900 ms CreateObjectMapping: 0.727700 ms MarkObjects: 3.687300 ms  DeleteObjects: 2.359800 ms)
 
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-QCFS-ZCJ9-HB68-2BD8-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 2475990342676-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-DirectoryNotFoundException: Could not find a part of the path "C:\Users\008028536\OneDrive - New England Institute of Technology\Desktop\myprojects\Unity2ClassProject\Library\PackageCache\com.unity.collections@5b6ebd78ccc0\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll"
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <f713e1c3c5f545ce9b1df47230f4f853>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <f713e1c3c5f545ce9b1df47230f4f853>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
-  at Mono.Cecil.ModuleDefinition.GetFileStream (System.String fileName, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00006] in <4e339395f8074c75847e518298d9c5fd>:0 
-  at Mono.Cecil.ModuleDefinition.ReadModule (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00008] in <4e339395f8074c75847e518298d9c5fd>:0 
-  at Mono.Cecil.AssemblyDefinition.ReadAssembly (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00000] in <4e339395f8074c75847e518298d9c5fd>:0 
-  at UnityEditor.AssemblyValidation.LoadAssemblyDefinitions (System.String[] assemblyPaths, System.String[] searchPaths) [0x00043] in <b2eb3a993ec44b92abc19c05010e7fa0>:0 
-  at UnityEditor.AssemblyValidation.ValidateAssemblies (System.String[] assemblyPaths, System.Boolean enableLogging) [0x00006] in <b2eb3a993ec44b92abc19c05010e7fa0>:0 
-
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 5.47 ms, found 4 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.549 seconds
-Domain Reload Profiling: 3230ms
-	BeginReloadAssembly (391ms)
-		DisableScriptedObjects (9ms)
-		CreateAndSetChildDomain (73ms)
-	RebuildCommonClasses (64ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (233ms)
-	LoadAllAssembliesAndSetupDomain (967ms)
-		LoadAssemblies (605ms)
-		AnalyzeDomain (545ms)
-			TypeCache.Refresh (12ms)
-			BuildScriptInfoCaches (509ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (1550ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (21ms)
-			BeforeProcessingInitializeOnLoad (272ms)
-			ProcessInitializeOnLoadAttributes (641ms)
-			ProcessInitializeOnLoadMethodAttributes (247ms)
-			AfterProcessingInitializeOnLoad (21ms)
-		AwakeInstancesAfterBackupRestoration (45ms)
-Refreshing native plugins compatible for Editor in 8.11 ms, found 4 plugins.
-Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7281 unused Assets / (5.6 MB). Loaded Objects now: 8140.
-Memory consumption went from 163.9 MB to 158.4 MB.
-Total: 17.571100 ms (FindLiveObjects: 1.350300 ms CreateObjectMapping: 2.002600 ms MarkObjects: 8.709300 ms  DeleteObjects: 5.495200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-QCFS-ZCJ9-HB68-2BD8-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 2475990342676-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-DirectoryNotFoundException: Could not find a part of the path "C:\Users\008028536\OneDrive - New England Institute of Technology\Desktop\myprojects\Unity2ClassProject\Library\PackageCache\com.unity.collections@5b6ebd78ccc0\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll"
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <f713e1c3c5f545ce9b1df47230f4f853>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <f713e1c3c5f545ce9b1df47230f4f853>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
-  at Mono.Cecil.ModuleDefinition.GetFileStream (System.String fileName, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00006] in <4e339395f8074c75847e518298d9c5fd>:0 
-  at Mono.Cecil.ModuleDefinition.ReadModule (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00008] in <4e339395f8074c75847e518298d9c5fd>:0 
-  at Mono.Cecil.AssemblyDefinition.ReadAssembly (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00000] in <4e339395f8074c75847e518298d9c5fd>:0 
-  at UnityEditor.AssemblyValidation.LoadAssemblyDefinitions (System.String[] assemblyPaths, System.String[] searchPaths) [0x00043] in <b2eb3a993ec44b92abc19c05010e7fa0>:0 
-  at UnityEditor.AssemblyValidation.ValidateAssemblies (System.String[] assemblyPaths, System.Boolean enableLogging) [0x00006] in <b2eb3a993ec44b92abc19c05010e7fa0>:0 
-
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 5.68 ms, found 4 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.241 seconds
-Domain Reload Profiling: 2682ms
-	BeginReloadAssembly (381ms)
-		DisableScriptedObjects (10ms)
-		CreateAndSetChildDomain (72ms)
-	RebuildCommonClasses (67ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (172ms)
-	LoadAllAssembliesAndSetupDomain (802ms)
-		LoadAssemblies (510ms)
-		AnalyzeDomain (457ms)
-			TypeCache.Refresh (20ms)
-			BuildScriptInfoCaches (419ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (1241ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			BeforeProcessingInitializeOnLoad (283ms)
-			ProcessInitializeOnLoadAttributes (466ms)
-			ProcessInitializeOnLoadMethodAttributes (171ms)
-			AfterProcessingInitializeOnLoad (16ms)
-		AwakeInstancesAfterBackupRestoration (32ms)
-Refreshing native plugins compatible for Editor in 6.54 ms, found 4 plugins.
-Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7281 unused Assets / (5.7 MB). Loaded Objects now: 8143.
-Memory consumption went from 167.3 MB to 161.7 MB.
-Total: 12.399100 ms (FindLiveObjects: 1.063500 ms CreateObjectMapping: 1.460900 ms MarkObjects: 6.391400 ms  DeleteObjects: 3.481800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 39256.513612 seconds.
-  path: Assets/Scripts/PlayerController.cs
-  importAddress: Guid(9a5c5e0535ce3d44d8b74d0fd0668f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerController.cs using Guid(9a5c5e0535ce3d44d8b74d0fd0668f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9db4edfc72d24414e8fb7bf04fc2d796') in 0.0102573 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a2895dc5919e24308e9229b3c4663285 DependenciesID=ea3c057fa4fe534d0dada456abae9e8f StaticDependenciesID=bbd62e86c43b1635ba5501dae0633652 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 314577.196749 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  importAddress: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '85d2e7dab34dcb2a88152c04441dff86') in 0.0507305 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6653b47a69d44ee72d34229daf50b44b DependenciesID=1049e2863332aa10269e5c940baa03ee StaticDependenciesID=5abc0ea6afebf0ecce87cbdbd80bc8df 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
