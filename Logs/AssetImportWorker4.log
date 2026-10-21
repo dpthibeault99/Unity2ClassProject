@@ -1,0 +1,393 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/respin/6000.4.12f1-6df48370b9ce' branch; Version is '6000.4.12f1 (3ca267ce8005) revision 3973735'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-danie" at "2026-10-21T17:56:35.1482411Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 32212 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-21T17:56:35Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 67436, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              f28d175186b847f082e69e818ce42f0c
+  Correlation Id:          298ac82b36289db68fef58489dcb1941
+  External correlation Id: 3975183653047353171
+  Machine Id:              eEWrpC/9x6xzx4JhK/azTG+GY20=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-danie" (connect: 0.00s, validation: 0.00s, handshake: 0.03s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-danie-notifications" at "2026-10-21T17:56:35.1770376Z"
+[Licensing::Module] Licensing Background thread has ended after 0.03s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/danie/Documents/GitHub/Unity2ClassProject
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+63591
+-licensingIpc
+LicenseClient-danie
+-force-d3d12
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/danie/Documents/GitHub/Unity2ClassProject
+C:/Users/danie/Documents/GitHub/Unity2ClassProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [15096]  Target information:
+
+Player connection [15096]  * "[IP] 10.91.6.101 [Port] 0 [Flags] 2 [Guid] 2193670155 [EditorId] 2193670155 [Version] 1048832 [Id] WindowsEditor(7,ThunderBolt3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [15096] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [15096] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 3.12 ms, found 4 plugins.
+Initialize engine version: 6000.4.12f1 (3ca267ce8005)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/danie/Documents/GitHub/Unity2ClassProject/Assets
+Forcing GfxDevice: Direct3D 12
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 5060 Laptop GPU (ID=0x2d19)
+    Vendor:          NVIDIA
+    VRAM:            7951 MB
+    App VRAM Budget: 7183 MB
+    Driver:          32.0.16.1060
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56124
+CodeReloadManager initialized
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001560 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.268 seconds
+Domain Reload Profiling: 584ms
+	BeginReloadAssembly (96ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (93ms)
+		AnalyzeDomain (130ms)
+			TypeCache.Refresh (129ms)
+				TypeCache.ScanAssembly (118ms)
+	FinalizeReload (269ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (72ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-2RR8-Q2KF-KFP4-Z2B2-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 4737143-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Unity2ClassProject
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.592 seconds
+Domain Reload Profiling: 1231ms
+	BeginReloadAssembly (134ms)
+		DisableScriptedObjects (4ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (415ms)
+		LoadAssemblies (289ms)
+		AnalyzeDomain (197ms)
+			TypeCache.Refresh (137ms)
+				TypeCache.ScanAssembly (123ms)
+			BuildScriptInfoCaches (50ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (592ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (106ms)
+			ProcessInitializeOnLoadAttributes (244ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
+			AfterProcessingInitializeOnLoad (5ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7288 unused Assets / (5.4 MB). Loaded Objects now: 8129.
+Memory consumption went from 168.1 MB to 162.6 MB.
+Total: 9.033100 ms (FindLiveObjects: 0.783900 ms CreateObjectMapping: 0.692600 ms MarkObjects: 4.464100 ms  DeleteObjects: 3.087300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 323561.095337 seconds.
+  path: Assets/Animation/Enemy/BigVegas/Dwarf Idle.fbx
+  importAddress: Guid(da1bbb26003b2f14a90ae7a4449f2d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/Dwarf Idle.fbx using Guid(da1bbb26003b2f14a90ae7a4449f2d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '7b284bf8150d0f8518705d2930d158ca') in 0.6403825 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ce9d028e8cddb06613e47e68df27fd97 DependenciesID=c674d1ff43139ea6d0cb08c7c2b3219a StaticDependenciesID=329add14484ba091f00698d1636e5b3b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.302129 seconds.
+  path: Assets/Animation/Enemy/BigVegas/Dwarf Idle.fbx
+  importAddress: Guid(da1bbb26003b2f14a90ae7a4449f2d91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Enemy/BigVegas/Dwarf Idle.fbx using Guid(da1bbb26003b2f14a90ae7a4449f2d91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '44dc0926f310e2cab05a8b4675d9c7c2') in 0.0861205 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=74954b5c0071fe4153365282bfb31592 DependenciesID=0e0469c92b3bd90e725008f7d6251f86 StaticDependenciesID=6e9b58e1c0a269c3e9072a444b8a0947 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 193
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.909773 seconds.
+  path: Assets/Animation/Enemy/BigVegas/Dwarf Idle.fbx
+  importAddress: Guid(da1bbb26003b2f14a90ae7a4449f2d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/Dwarf Idle.fbx using Guid(da1bbb26003b2f14a90ae7a4449f2d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e8bb452c60989e4aceb2ec6158ddc1b1') in 0.064074 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ce9d028e8cddb06613e47e68df27fd97 DependenciesID=afad6ad57334f4dfb8fe2b99bc2982e2 StaticDependenciesID=cdda6e66b3984d32538ed44a11031799 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.884835 seconds.
+  path: Assets/Animation/Enemy/BigVegas/Dwarf Idle.fbx
+  importAddress: Guid(da1bbb26003b2f14a90ae7a4449f2d91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Enemy/BigVegas/Dwarf Idle.fbx using Guid(da1bbb26003b2f14a90ae7a4449f2d91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '93ac446b84e9beb52758e6ee9c215bb0') in 0.0098322 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bebdf35e318f45c5f9c5b418bcafc8af DependenciesID=d1b277587d77dae89bd1e4381668dc56 StaticDependenciesID=d0a9cba1c043e01ac7fff6d12e856cdd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 193
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.501324 seconds.
+  path: Assets/Animation/Enemy/BigVegas/Elvis_FaceAnimMap.png
+  importAddress: Guid(21afe9b846408264684b2792cfe33dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/Elvis_FaceAnimMap.png using Guid(21afe9b846408264684b2792cfe33dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '91d8235961fc7f8c438956c32f093262') in 0.0204421 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8e8cf06e6444bca1260487966eb1d291 DependenciesID=c2ec71aa0309908441d7a7137f3fdc65 StaticDependenciesID=26713dcde27731f3bf2bd256e027a9fe 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.376629 seconds.
+  path: Assets/Animation/Enemy/BigVegas/Elvis_FaceAnimMap.png
+  importAddress: Guid(21afe9b846408264684b2792cfe33dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/Elvis_FaceAnimMap.png using Guid(21afe9b846408264684b2792cfe33dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '06b9f4b86b6f1ee3fcebc2cfbd006ddc') in 0.0164482 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1ff7f14952eda532a2cd3930e1f9bb7c DependenciesID=c518b1b3b329ecd01020851d32b68e50 StaticDependenciesID=3c763f568640e7f1ff366875685e2aad 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.928818 seconds.
+  path: Assets/Animation/Enemy/BigVegas/Elvis_FaceAnimMap.png
+  importAddress: Guid(21afe9b846408264684b2792cfe33dc2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Enemy/BigVegas/Elvis_FaceAnimMap.png using Guid(21afe9b846408264684b2792cfe33dc2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '902932fb81954f456886aa881074a24b') in 0.0243806 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7f79493363156b8ef99a30904db88bd7 DependenciesID=1cb1c0daf1a9262a5ce418d78c139aef StaticDependenciesID=2214537497ab357db947c67cba0e9a4b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.429867 seconds.
+  path: Assets/Animation/Enemy/BigVegas/FatElvis_diffuse.jpg
+  importAddress: Guid(29682f69cc993c446bb72b103fa5c043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/FatElvis_diffuse.jpg using Guid(29682f69cc993c446bb72b103fa5c043) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2d84d09cccfea980f08a8e2768d039d1') in 0.0102286 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8e857a2f9a1dca796c9b228ce64b3ebf DependenciesID=c02825ced7e116859346e23b07959d09 StaticDependenciesID=4562c2d7046f6c4e11047e5a2524b431 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.308077 seconds.
+  path: Assets/Animation/Enemy/BigVegas/FatElvis_normal.jpg
+  importAddress: Guid(c834d20b8422abd4bb03b60bb62fc750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/FatElvis_normal.jpg using Guid(c834d20b8422abd4bb03b60bb62fc750) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2d3ba4535729672274f2e355fdc71fb4') in 0.0228253 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=099f1077cbdfd72f476c2314188698e6 DependenciesID=1aaddf132409e75eb68d5f1faed93056 StaticDependenciesID=3ea0674de6d9e63ae4acbac073d96380 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.626698 seconds.
+  path: Assets/Animation/Enemy/BigVegas/FatElvis_normal.jpg
+  importAddress: Guid(c834d20b8422abd4bb03b60bb62fc750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/FatElvis_normal.jpg using Guid(c834d20b8422abd4bb03b60bb62fc750) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '7f9210f357d108ad51079759a47023e2') in 0.018982 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=65aa3814894e2bdb3070809c09675bb2 DependenciesID=cff4bc99810a1cf8fe18cd3be62a510f StaticDependenciesID=f43b8546d2e668a4aba7792c9d8ace55 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.928477 seconds.
+  path: Assets/Animation/Enemy/BigVegas/FatElvis_normal.jpg
+  importAddress: Guid(c834d20b8422abd4bb03b60bb62fc750) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Enemy/BigVegas/FatElvis_normal.jpg using Guid(c834d20b8422abd4bb03b60bb62fc750) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fdaa446f4f25d7ac181a349431ad1201') in 0.0092443 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8324ede18f8fa0a8600b1acffd1e40e7 DependenciesID=309be905c1d0db1cbf58d24c0ba3bc15 StaticDependenciesID=f1e3a65943d6234ae6bb4262f368502d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 70.360006 seconds.
+  path: Assets/Animation/Enemy/BigVegas/FatElvis_diffuse.jpg
+  importAddress: Guid(29682f69cc993c446bb72b103fa5c043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/FatElvis_diffuse.jpg using Guid(29682f69cc993c446bb72b103fa5c043) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3e9a1bb2668898a6d18deaa2d79e57d6') in 0.0097332 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=856f4315393af824f1e9f72216b22960 DependenciesID=f3ae3791a6dab8284551e8578dcdecaf StaticDependenciesID=77cecae0b24be0671114a37740fc6086 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.940866 seconds.
+  path: Assets/Animation/Enemy/BigVegas/FatElvis_diffuse.jpg
+  importAddress: Guid(29682f69cc993c446bb72b103fa5c043) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Enemy/BigVegas/FatElvis_diffuse.jpg using Guid(29682f69cc993c446bb72b103fa5c043) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '345b8b4b51b706501444e32b044d718e') in 0.008005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c63116d8a4b44ac19e0c2ca8d6c90f66 DependenciesID=53250adf2d7e0638ce79bdcb4f042972 StaticDependenciesID=91b0ed50ddf79aee509e30e3036a5c53 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.553963 seconds.
+  path: Assets/Animation/Enemy/BigVegas/FatElvis_diffuse.jpg
+  importAddress: Guid(29682f69cc993c446bb72b103fa5c043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/FatElvis_diffuse.jpg using Guid(29682f69cc993c446bb72b103fa5c043) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5797bbd2fcb1a13d01cbce41560019c9') in 0.0113683 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8e857a2f9a1dca796c9b228ce64b3ebf DependenciesID=45dbf0a91b2933b2601b77d3d17f11ff StaticDependenciesID=ca22e283c86d0d59e0fc359a481ee1cb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.940837 seconds.
+  path: Assets/Animation/Enemy/BigVegas/FatElvis_diffuse.jpg
+  importAddress: Guid(29682f69cc993c446bb72b103fa5c043) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Enemy/BigVegas/FatElvis_diffuse.jpg using Guid(29682f69cc993c446bb72b103fa5c043) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '540470676212f526f37b88bbc3ab2f3d') in 0.0077524 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=00252f94069eca7f9c92009688e3f106 DependenciesID=618ea1dfe63b4650a478ff96e4fde4b3 StaticDependenciesID=b0405d5e8be41a3876713b7479311791 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.233879 seconds.
+  path: Assets/Animation/Enemy/BigVegas/Drunk Run in place.fbx
+  importAddress: Guid(e20fe03d74e93184ba2d230d51ab8b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/Drunk Run in place.fbx using Guid(e20fe03d74e93184ba2d230d51ab8b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3b33506618632008c2611b5aa019efcb') in 1.7863381 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=782e2f3a65bc5ab3d76020af4f632cdf DependenciesID=0b091cf277eb3523c7046300e799a31f StaticDependenciesID=a58d13995dccb35a5f5123038c981ac4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 200
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.131589 seconds.
+  path: Assets/Animation/Enemy/BigVegas/Character_Fat_Elvis_body_color1.mat
+  importAddress: Guid(ccc0184cfa89d36488e263b7909396c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Animation/Enemy/BigVegas/Character_Fat_Elvis_body_color1.mat using Guid(ccc0184cfa89d36488e263b7909396c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd794515db74b1931da84e8de992815c8') in 0.0096005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=15a375c7e0d7c72f8cc283a84b314d9a DependenciesID=aa12d9afb218a2440be91a1679f58508 StaticDependenciesID=d4b5f41800ebcb5af1aa8c96b5f609a0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.594961 seconds.
+  path: Assets/Animation/Enemy/BigVegas/Drunk Run Forward.fbx
+  importAddress: Guid(471e441cc37c3c644a5a1055e7d4d8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/Drunk Run Forward.fbx using Guid(471e441cc37c3c644a5a1055e7d4d8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '825b734532922006925e5accb3e9f055') in 0.0879956 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8aa5b50876cc7377762068dc5d4e86c6 DependenciesID=2d44fd15eb0b5b3b5e2a03eeabc7de61 StaticDependenciesID=d43b7811f2ae8dbdee16139bc18b4e2d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 200
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.775777 seconds.
+  path: Assets/Animation/Enemy/BigVegas/Dwarf Idle.fbx
+  importAddress: Guid(da1bbb26003b2f14a90ae7a4449f2d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Enemy/BigVegas/Dwarf Idle.fbx using Guid(da1bbb26003b2f14a90ae7a4449f2d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '146f1d213bd502236b069ba6d7fe6902') in 0.2323641 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eeb82828ca4a3939a78f85d9918d9438 DependenciesID=508d61ed3e94ab14b58a72d86c229b70 StaticDependenciesID=cdda6e66b3984d32538ed44a11031799 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 198
+
