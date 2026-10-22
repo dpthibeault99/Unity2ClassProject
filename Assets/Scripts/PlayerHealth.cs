@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public Image healthBar;
     public float playerHealth;
     public float currentHealth;
     [Header("Ragdoll Stuff")]
@@ -15,11 +17,15 @@ public class PlayerHealth : MonoBehaviour
 
     public void takeDamage(float damage)
     {
-        currentHealth -= damage;
-        if(currentHealth < 0)
+        if (currentHealth > 0)
         {
-            Debug.Log("Player Is Dead");
-            activateRagdoll();
+            currentHealth -= damage;
+            healthBar.fillAmount = currentHealth / playerHealth;
+            if (currentHealth < 0)
+            {
+                Debug.Log("Player Is Dead");
+                activateRagdoll();
+            }
         }
     }
 
