@@ -5,6 +5,7 @@ public class BasicAgent : MonoBehaviour
 {
     public Transform playerTarget;
     public NavMeshAgent agent;
+    public Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,5 +17,6 @@ public class BasicAgent : MonoBehaviour
     void Update()
     {
         agent.SetDestination(playerTarget.position);
+        animator.SetFloat("running", agent.velocity.magnitude);
     }
 }
