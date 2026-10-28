@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,7 +17,7 @@ public class GameManager : MonoBehaviour
     public GameObject winPanel;
 
 
-    bool _gameOver = false;
+    public bool _gameOver = false;
 
     private void Awake()
     {
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
         instance = this;
         // use if ou want game manager to persist between scences
         DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(winPanel);
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -67,7 +70,24 @@ public class GameManager : MonoBehaviour
         {
             winPanel.SetActive(true);
             winPanel.GetComponentInChildren<TMP_Text>().text = $"All {collectedPickUps} items collected!";
+            restartGame();
         }
     }
+    
+    public void restartGame()
+    {
+        StartCoroutine(Restart());
+    }
 
+    IEnumerator Restart()
+    {
+        yield return new WaitForSeconds(2.0f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        yield return new WaitForSeconds(0.1f);
+        itemDisplay = GameObject.Find("Pickups").GetComponent<TMP_Text>();
+        winPanel = GameObject.Find("winPanel");
+        collectedPickUps = 0;
+        UpdateUI();
+        _gameOver = false;
+    }
 }

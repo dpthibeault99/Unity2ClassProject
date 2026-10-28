@@ -21,10 +21,12 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth -= damage;
             healthBar.fillAmount = currentHealth / playerHealth;
-            if (currentHealth < 0)
+            if (currentHealth <= 0)
             {
                 Debug.Log("Player Is Dead");
                 activateRagdoll();
+                GameManager.instance._gameOver = true;
+                GameManager.instance.restartGame();
             }
         }
     }
