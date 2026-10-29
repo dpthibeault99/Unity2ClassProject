@@ -1,0 +1,238 @@
+[
+  {
+    "Path": "Animations.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animation\\PlayerAnimationController.controller",
+    "PreviouslyExisted": true
+  },
+  {
+    "Path": "Animation\\Enemy\\EnemyAnimController.controller",
+    "PreviouslyExisted": true
+  },
+  {
+    "Path": "Animations\\Enemy.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Character_Fat_Elvis_body_color1.mat",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Character_Fat_Elvis_body_color1.mat.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Drunk Run Forward.fbx",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Drunk Run Forward.fbx.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Drunk Run Inplace.fbx",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Drunk Run Inplace.fbx.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Dwarf Idle.fbx",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Dwarf Idle.fbx.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Elvis_Brows_MAT1.mat",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Elvis_Brows_MAT1.mat.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Elvis_Eyes_MAT1.mat",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Elvis_Eyes_MAT1.mat.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Elvis_FaceAnimMap.png",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Elvis_FaceAnimMap.png.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Elvis_Mouth_MAT1.mat",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Elvis_Mouth_MAT1.mat.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\EnemyController.controller",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\EnemyController.controller.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\FatElvis_diffuse.jpg",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\FatElvis_diffuse.jpg.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\FatElvis_normal.jpg",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\FatElvis_normal.jpg.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Jump.fbx",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Jump.fbx.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Mutant Swiping (1).fbx",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\Enemy\\Mutant Swiping (1).fbx.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Ch09_nonPBR@Female Dynamic Pose.fbx",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Ch09_nonPBR@Female Dynamic Pose.fbx.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Ch09_nonPBR@Happy Idle (1).fbx",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Ch09_nonPBR@Happy Idle (1).fbx.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Ch09_nonPBR@Jumping.fbx",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Ch09_nonPBR@Jumping.fbx.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Ch09_nonPBR@Slow Run (1).fbx",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Ch09_nonPBR@Slow Run (1).fbx.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\PlayerAnimationController.controller",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\PlayerAnimationController.controller.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Scripts\\BasicAgent.cs",
+    "PreviouslyExisted": true
+  },
+  {
+    "Path": "Scripts\\DoorOpen.cs",
+    "PreviouslyExisted": true
+  },
+  {
+    "Path": "Scripts\\EnemyAttack.cs",
+    "PreviouslyExisted": true
+  },
+  {
+    "Path": "Scripts\\GameManager.cs",
+    "PreviouslyExisted": true
+  },
+  {
+    "Path": "Scripts\\GoalScript.cs",
+    "PreviouslyExisted": true
+  },
+  {
+    "Path": "Scripts\\PickUpScript.cs",
+    "PreviouslyExisted": true
+  },
+  {
+    "Path": "Scripts\\PlayerController.cs",
+    "PreviouslyExisted": true
+  },
+  {
+    "Path": "Scripts\\PlayerInterator.cs",
+    "PreviouslyExisted": true
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Materials\\Ch09_1001_Diffuse.png",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Materials\\Ch09_1001_Diffuse.png.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Materials\\Ch09_1001_Glossiness.png",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Materials\\Ch09_1001_Glossiness.png.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Materials\\Ch09_1001_Normal.png",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Materials\\Ch09_1001_Normal.png.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Materials\\Ch09_1001_Specular.png",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Materials\\Ch09_1001_Specular.png.meta",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Materials\\Ch09_body.mat",
+    "PreviouslyExisted": false
+  },
+  {
+    "Path": "Animations\\PlayerCharacter\\Materials\\Ch09_body.mat.meta",
+    "PreviouslyExisted": false
+  }
+]
