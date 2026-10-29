@@ -3514,20 +3514,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &255282387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255282384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b47cf2234dd123e4fa6b45e395b6d725, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
-  pauseMenu: {fileID: 1426561398}
-  isPaused: 0
 --- !u!1001 &306284240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8452,6 +8438,7 @@ GameObject:
   - component: {fileID: 1339895096}
   - component: {fileID: 1339895099}
   - component: {fileID: 1339895100}
+  - component: {fileID: 1339895101}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -8673,6 +8660,20 @@ MonoBehaviour:
   ragdoll: {fileID: 45290304}
   playerModel: {fileID: 255282384}
   PlayerControls: {fileID: 1339895097}
+--- !u!114 &1339895101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339895091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47cf2234dd123e4fa6b45e395b6d725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  pauseMenu: {fileID: 1426561398}
+  isPaused: 0
 --- !u!1 &1341929915
 GameObject:
   m_ObjectHideFlags: 0
@@ -14696,7 +14697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1418558755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16713,9 +16714,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 473f7473444294942b536acc2e4a9d4f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 255282386}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 473f7473444294942b536acc2e4a9d4f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 255282387}
   m_SourcePrefab: {fileID: 100100000, guid: 473f7473444294942b536acc2e4a9d4f, type: 3}
 --- !u!1 &2015341724 stripped
 GameObject:
@@ -17006,6 +17004,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 473f7473444294942b536acc2e4a9d4f, type: 3}
       propertyPath: m_Name
       value: ragDoll
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 473f7473444294942b536acc2e4a9d4f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
