@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour
     bool _sprintHeld;
     float _rotationVelocity;
 
-
+    [Header("Platfrom Variables")]
+    public Transform platfrom;
+    Transform originalParent;
 
     private void Awake()
     {
@@ -48,6 +50,8 @@ public class PlayerController : MonoBehaviour
         {
             cameraTransform = Camera.main.transform;
         }
+
+        originalParent = transform.parent;
     }
 
     // inputs via messageing
@@ -127,6 +131,7 @@ public class PlayerController : MonoBehaviour
         ApplyGravity();
         handleGroundCheck();
         UpdatAnimation();
+        updatePlatformParent();
         //if (_isGrounded)
         //{
         //    Debug.Log("on ground");
@@ -158,6 +163,36 @@ public class PlayerController : MonoBehaviour
         }
 
         _jumpPressed = false;   
+    }
+
+    void SetPlatform(Transform newPlatform)
+    {
+        if (platfrom = newPlatform) return;
+        platfrom = newPlatform;
+
+        transform.SetParent(platfrom != null ? platfrom : originalParent, true); // explain later
+    }
+
+    void updatePlatformParent()
+    {
+        if (_isJumping || _velocity.y > 0)
+        {
+            SetPlatform(null);
+            return;
+        }
+        // check if on a platform
+        if (Physics.SphereCast(groundCheck.position + Vector3.up * 0.3f,0.1f, Vector3.down,
+            out RaycastHit hit,0.6f ,groundMask, QueryTriggerInteraction.Ignore))
+        {
+            basicPlatform loopPlatform = hit.collider.GetComponentInParent<basicPlatform>();
+            if (loopPlatform != null && loopPlatform.isActiveAndEnabled)
+            {
+                SetPlatform(loopPlatform.transform);
+
+                return; 
+            }
+
+        }
     }
 
     private void OnDrawGizmos()

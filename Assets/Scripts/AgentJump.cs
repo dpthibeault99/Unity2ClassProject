@@ -22,28 +22,28 @@ public class AgentJump : MonoBehaviour
     {
         if(agent.isOnOffMeshLink && !jumping)
         {
-            StartCoroutine(Jump());
+            //StartCoroutine(Jump());
         }
     }
 
-    IEnumerator Jump()
-    {
-        jumping = true;
+    //IEnumerator Jump()
+    //{
+    //    jumping = true;
 
-        anim.SetTrigger("Jump");
+    //    anim.SetTrigger("Jump");
 
-        OffMeshLinkData link = agent.currentOffMeshLinkData;
-        Vector3 start = transform.position;
-        Vector3 end = link.endPos + Vector3.up * agent.baseOffset;
+    //    OffMeshLinkData link = agent.currentOffMeshLinkData;
+    //    Vector3 start = transform.position;
+    //    Vector3 end = link.endPos + Vector3.up * agent.baseOffset;
 
-        float elapsedTime = 0.0f;
+    //    float elapsedTime = 0.0f;
 
-        while (elapsedTime < jumpDuration)
-        {
-            float time = Mathf.Clamp01(elapsedTime / jumpDuration);
+    //    while (elapsedTime < jumpDuration)
+    //    {
+    //        float time = Mathf.Clamp01(elapsedTime / jumpDuration);
 
-            Vector3 position = Vector3.Lerp(start, end, time);  
-        }
-    }
-    
+    //        Vector3 position = Vector3.Lerp(start, end, time);
+    //    }
+    //}
+
 }
