@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     [Header("Platfrom Variables")]
     public Transform platfrom;
     Transform originalParent;
+    RecativePlatform ridenPLatform;
 
     private void Awake()
     {
@@ -168,9 +169,16 @@ public class PlayerController : MonoBehaviour
     void SetPlatform(Transform newPlatform)
     {
         if (platfrom = newPlatform) return;
-        platfrom = newPlatform;
 
+        if(ridenPLatform != null)
+        {
+            ridenPLatform.playerLeft();
+        }
+
+        platfrom = newPlatform;
+        ridenPLatform = platfrom != null ? platfrom.GetComponentInParent<RecativePlatform>() : null;
         transform.SetParent(platfrom != null ? platfrom : originalParent, true); // explain later
+        if(ridenPLatform != null) { ridenPLatform.PlayerBoarded(); }
     }
 
     void updatePlatformParent()
@@ -183,7 +191,18 @@ public class PlayerController : MonoBehaviour
         // check if on a platform
         if (Physics.SphereCast(groundCheck.position + Vector3.up * 0.3f,0.1f, Vector3.down,
             out RaycastHit hit,0.6f ,groundMask, QueryTriggerInteraction.Ignore))
+
         {
+
+            RecativePlatform recativePlatform = hit.collider.GetComponentInParent<RecativePlatform>();
+            if (recativePlatform != null && recativePlatform.isActiveAndEnabled)
+            {
+                SetPlatform(recativePlatform.movingTransform);
+                recativePlatform.activatePlatform();
+                return;
+            }
+
+
             basicPlatform loopPlatform = hit.collider.GetComponentInParent<basicPlatform>();
             if (loopPlatform != null && loopPlatform.isActiveAndEnabled)
             {
